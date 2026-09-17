@@ -1,0 +1,26 @@
+[Unit]
+Description=MineTunnel TCP relay
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+EnvironmentFile=/etc/minetunnel-relay
+ExecStart=/usr/local/bin/minetunnel-relay --listen=:7000 --public-host=${MINETUNNEL_PUBLIC_HOST} --port-start=30000 --port-end=30100
+Restart=on-failure
+RestartSec=2s
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+RestrictSUIDSGID=true
+LimitNOFILE=16384
+
+[Install]
+WantedBy=multi-user.target

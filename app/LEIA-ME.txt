@@ -1,0 +1,11 @@
+MineTunnel v0.2 - Aplicativo Windows
+
+1. Abra o Minecraft Java e inicie o servidor ou use Abrir para LAN.
+2. Informe a porta mostrada pelo Minecraft, ou use o botao de detectar.
+3. Clique em Iniciar tunel.
+4. Envie aos amigos somente o endereco publico exibido pelo aplicativo.
+
+Os amigos entram pelo Minecraft normal e nao precisam instalar nada.
+
+Mantenha MineTunnel.exe e minetunnel.json na mesma pasta.
+Nao compartilhe o arquivo minetunnel.json, pois ele contem o segredo do relay.

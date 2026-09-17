@@ -1,0 +1,6 @@
+{
+  "relay": "SEU_IP_DO_VPS:7000",
+  "local": "127.0.0.1:25565",
+  "secret": "TROQUE_PELA_MESMA_SENHA_DO_RELAY",
+  "name": "Meu-PC"
+}

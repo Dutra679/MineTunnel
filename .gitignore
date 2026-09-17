@@ -1,0 +1,24 @@
+# Credenciais e configuracoes locais
+minetunnel-oracle-ed25519
+minetunnel-oracle-ed25519.pub
+**/minetunnel.json
+!**/minetunnel.json.example
+
+# Saidas de build e pacotes privados
+app/dist/
+relay/bin/
+*.exe
+*.zip
+
+# Artefatos de desenvolvimento
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

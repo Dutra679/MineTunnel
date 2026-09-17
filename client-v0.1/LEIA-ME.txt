@@ -1,0 +1,10 @@
+MineTunnel v0.1 - Cliente Windows
+
+1) Este programa e somente para o PC que hospeda o Minecraft Java.
+2) Seus amigos NAO precisam instalar nada.
+3) Antes de usar pela internet, voce precisa de um relay rodando em um VPS com IPv4 publico.
+4) Copie minetunnel.json.example para minetunnel.json e coloque o IP do VPS, a senha e a porta local do Minecraft.
+5) Execute MineTunnel.exe e envie aos amigos o endereco exibido.
+
+Servidor dedicado Java: normalmente 127.0.0.1:25565
+Abrir para LAN: use a porta que o Minecraft mostrar no chat.
