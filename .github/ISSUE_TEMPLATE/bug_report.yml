@@ -1,0 +1,52 @@
+name: Relatar um problema
+description: Informe um erro reproduzivel no aplicativo ou relay.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Nao publique segredos, tokens, chaves SSH ou configuracoes reais.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Componente
+      options:
+        - Aplicativo Windows
+        - Relay Linux
+        - Implantacao
+        - Documentacao
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versao ou commit
+      placeholder: v0.2.0 ou 048d6ef
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Comportamento observado
+      description: O que aconteceu e o que voce esperava que acontecesse?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: Liste os passos minimos, sem dados privados.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Windows/Linux, versao do Minecraft, Java e provedor da VPS.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Verificacao
+      options:
+        - label: Removi credenciais, IPs privados e dados pessoais dos logs.
+          required: true

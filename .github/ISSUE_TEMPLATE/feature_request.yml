@@ -1,0 +1,28 @@
+name: Sugerir uma melhoria
+description: Proponha uma funcionalidade ou evolucao do projeto.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Qual dificuldade concreta esta proposta resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Explique o comportamento esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto tecnico
+      description: Comente compatibilidade, seguranca e mudancas no protocolo.
