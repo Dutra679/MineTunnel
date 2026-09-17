@@ -17,10 +17,10 @@ jobs:
         working-directory: relay
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version-file: relay/go.mod
           cache-dependency-path: relay/go.mod
@@ -42,14 +42,14 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Build
         shell: powershell
         run: .\app\build.ps1
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: MineTunnel-Windows
           path: |
